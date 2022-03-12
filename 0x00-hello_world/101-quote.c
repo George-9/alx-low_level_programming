@@ -7,7 +7,7 @@
 */
 int main(void)
 {
-char *a;
+char a;
 
 	a = "and that piece of art is useful\"";
 	fprintf(stderr, "%s %s\n", c, " - Dora Korpar, 2015-10-19");
