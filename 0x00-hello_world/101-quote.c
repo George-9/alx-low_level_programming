@@ -7,9 +7,8 @@
 */
 int main(void)
 {
-char a;
+char a[80] = "and that piece of art is useful\"";
 
-	a = "and that piece of art is useful\"";
-	fprintf(stderr, "%s %s\n", c, " - Dora Korpar, 2015-10-19");
+	fprintf(stderr, "%s %s\n", a, " - Dora Korpar, 2015-10-19");
 	return (1);
 }
