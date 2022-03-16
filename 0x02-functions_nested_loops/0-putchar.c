@@ -3,8 +3,12 @@
 /**
 * main Entry point
 *
+* @c holds data for text to be printed to stdio
 *
-* Return: always 0 (Success)
+* main calls printf function
+*
+*Return: always 0 (Success)
+*
 */
 int main(void)
 {
