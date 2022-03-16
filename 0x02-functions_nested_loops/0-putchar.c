@@ -3,10 +3,6 @@
 /**
 * main Entry point
 *
-* @d: holds data
-*
-* @main: calls printf function
-*
 * Return: always 0 (Success)
 *
 */
@@ -17,8 +13,8 @@ int main(void)
 }
 
 /**
-* @printInfo: has one para. called to print info
-* printInfo: prints param to stdio
+* printInfo - has one parameter. called to print info
+*
 * @d: one param
 */
 void printInfo(char *d)
