@@ -3,8 +3,8 @@
 /**
 * main Entry point
 *
-* @text holds data for text to be printed to stdio
-*
+* @text: holds data for text to be printed to stdio
+* text
 * main calls printf function
 *
 *Return: always 0 (Success)
@@ -21,8 +21,11 @@ int main(void)
 
 /**
 * printInfo prints some text to the standard output.
+* text is the only param.
+*
 * It's being created in the haeder file "main.h".
-* @text holds the vale to be printed
+*
+* @text: holds the vale to be printed
 */
 void printInfo(char *text)
 {
