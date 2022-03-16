@@ -16,6 +16,6 @@ void printInfo(char *c)
 {
 	while (*c)
 	putchar(*c++);
-	putchar("\n");
+	printInfo("\n");
 }
 
