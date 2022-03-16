@@ -16,5 +16,5 @@ void printInfo(char *c)
 {
 	while (*c)
 	putchar(*c++);
-	readchar();
+	return (0);
 }
