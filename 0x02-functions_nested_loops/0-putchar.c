@@ -3,9 +3,9 @@
 /**
 * main Entry point
 *
-* @d: holds data for text to be printed to stdio
+* @d: holds data
 *
-* main calls printf function
+* @main: calls printf function
 *
 * Return: always 0 (Success)
 *
@@ -17,9 +17,9 @@ int main(void)
 }
 
 /**
-* printInfo: has one para. called to print info 
+* @printInfo: has one para. called to print info
 * printInfo: prints param to stdio
-*
+* @d: one param
 */
 void printInfo(char *d)
 {
