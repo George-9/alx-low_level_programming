@@ -4,7 +4,7 @@
 /**
 * print info prints some text to the standard output.
 * It's being called in sother programs.
-*c (char) is a parameter  for the string to be printed to the
+* @c: (char) is a parameter  for the string to be printed to the
 *"stdio"
 */
 void printInfo(char *c);

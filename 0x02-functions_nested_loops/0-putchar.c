@@ -3,7 +3,7 @@
 /**
 * main Entry point
 *
-* @text: holds data for text to be printed to stdio
+* @d: holds data for text to be printed to stdio
 * text
 * main calls printf function
 *
@@ -25,7 +25,7 @@ int main(void)
 *
 * It's being created in the haeder file "main.h".
 *
-* @text: holds the vale to be printed
+* @d: holds the vale to be printed
 */
 void printInfo(char *d)
 {
