@@ -12,6 +12,11 @@ int main(void)
 	return (0);
 }
 
+/**
+* print info prints some text to the standard output.
+* It's being created in the haeder file "main.h".
+*
+*/
 void printInfo(char *c)
 {
 	while (*c)
