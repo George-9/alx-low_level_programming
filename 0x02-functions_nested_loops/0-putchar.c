@@ -9,12 +9,17 @@
 int main(void)
 {
 	printInfo("_putchar");
-	return (0);
 }
 
 void printInfo(char *c)
 {
 	while (*c)
-	putchar(*c++);
-	return (0);
+	{
+		putchar(*c++);
+		if (!(*c))
+		{
+			putchar('\n');
+			break;
+		}
+	}
 }
