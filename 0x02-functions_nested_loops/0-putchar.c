@@ -8,6 +8,9 @@
 */
 int main(void)
 {
+	/**
+	* print "_putcahr" to the standard output.
+	*/
 	printInfo("_putchar");
 	return (0);
 }
@@ -19,6 +22,9 @@ int main(void)
 */
 void printInfo(char *c)
 {
+	/**
+	* char "c" holds the vale to be printed
+	*/
 	while (*c)
 	{
 		putchar(*c++);
