@@ -14,6 +14,8 @@ int main(void)
 
 void printInfo(char *c)
 {
-	 while(*c) putchar(*c++);
+	while (*c)
+	putchar(*c++);
+	putchar("\n");
 }
 
