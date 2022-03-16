@@ -27,18 +27,18 @@ int main(void)
 *
 * @text: holds the vale to be printed
 */
-void printInfo(char *text)
+void printInfo(char *d)
 {
 	/**
 	* char "c" holds the vale to be printed
 	*/
-	while (*text)
+	while (*d)
 	{
 		/**
 		* char "c" holds the vale to be printed
 		*/
-		putchar(*text++);
-		if (!(*text))
+		putchar(*d++);
+		if (!(*d))
 		{
 			/**
 			* char "c" holds the vale to be printed
