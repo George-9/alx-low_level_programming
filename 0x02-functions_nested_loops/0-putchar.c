@@ -9,10 +9,11 @@
 int main(void)
 {
 	printInfo("_putchar");
-	readchar();
+	return (0);
 }
 
-void printInfo(char info[])
+void printInfo(char *c)
 {
-	printf(info, stdio);
+	 while(*c) putchar(**c++);
 }
+
