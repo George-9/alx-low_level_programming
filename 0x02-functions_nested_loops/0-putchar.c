@@ -3,7 +3,7 @@
 /**
 * main Entry point
 *
-* @c holds data for text to be printed to stdio
+* @text holds data for text to be printed to stdio
 *
 * main calls printf function
 *
@@ -22,20 +22,20 @@ int main(void)
 /**
 * printInfo prints some text to the standard output.
 * It's being created in the haeder file "main.h".
-* char "c" holds the vale to be printed
+* @text holds the vale to be printed
 */
-void printInfo(char *c)
+void printInfo(char *text)
 {
 	/**
 	* char "c" holds the vale to be printed
 	*/
-	while (*c)
+	while (*text)
 	{
 		/**
 		* char "c" holds the vale to be printed
 		*/
-		putchar(*c++);
-		if (!(*c))
+		putchar(*text++);
+		if (!(*text))
 		{
 			/**
 			* char "c" holds the vale to be printed
