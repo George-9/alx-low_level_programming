@@ -9,6 +9,7 @@
 int main(void)
 {
 	printInfo("_putchar");
+	return (0);
 }
 
 void printInfo(char *c)
