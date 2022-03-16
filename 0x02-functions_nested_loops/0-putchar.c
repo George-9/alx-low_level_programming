@@ -19,30 +19,13 @@ int main(void)
 	return (0);
 }
 
-/**
-* printInfo prints some text to the standard output.
-* text is the only param.
-*
-* It's being created in the haeder file "main.h".
-*
-* @d: holds the vale to be printed
-*/
 void printInfo(char *d)
 {
-	/**
-	* char "c" holds the vale to be printed
-	*/
 	while (*d)
 	{
-		/**
-		* char "c" holds the vale to be printed
-		*/
 		putchar(*d++);
 		if (!(*d))
 		{
-			/**
-			* char "c" holds the vale to be printed
-			*/
 			putchar('\n');
 			break;
 		}
