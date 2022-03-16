@@ -18,7 +18,7 @@ int main(void)
 /**
 * printInfo prints some text to the standard output.
 * It's being created in the haeder file "main.h".
-*
+* char "c" holds the vale to be printed
 */
 void printInfo(char *c)
 {
