@@ -50,3 +50,12 @@ void print_numbers(void);
 * Return: void
 */
 void print_most_numbers(void);
+
+/**
+* print_line - prints a line on the terminal _________
+*
+* @n: parameter for number of loops
+*
+* Return: a line
+*/
+void print_line(int n);
