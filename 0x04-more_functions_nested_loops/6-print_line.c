@@ -1,5 +1,6 @@
 #include "main.h"
 
+int main(void) { print_line(10); return (0);}
 /**
 * print_line - Returns a num 1 or 0 according to the checked character
 *
@@ -15,7 +16,6 @@ char data = '_';
 
 	for (count = 0; count <= n; count++)
 	{
-		data += data;
 		putchar(data);
 	}
 	putchar('\n');
