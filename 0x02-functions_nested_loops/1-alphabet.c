@@ -8,7 +8,7 @@
 */
 int main(void)
 {
-	lowerAlphabets("ABCDEFGHIJKLMNOPQRSTUVWXYZ\n");
+	printInfo((lowerAlphabets("ABCDEFGHIJKLMNOPQRSTUVWXYZ\n")));
 	return (0);
 }
 
@@ -17,11 +17,35 @@ int main(void)
 * character and print to stdio
 *
 * @c: hold chars/text to be printed
+* @checker: check if all alphabets are printed
 */
-void lowerAlphabets(char *c)
+char *lowerAlphabets(char c[])
 {
-	while(*c)
+int looper, len = (strlen(c));
+char *checker = NULL;
+	for (looper = 0; looper < len; looper++)
 	{
-		putchar(tolower(*c));
+		*checker += (tolower(c[looper]));
+	}
+	return (c);
+}
+
+/**
+* printInfo - has one parameter. called to print info
+*
+* @d: one param
+*
+* Return: 0 or 1 (0 if Success)
+*/
+void printInfo(char *d)
+{
+	while (*d)
+	{
+		putchar(*d++);
+		if (!(*d))
+		{
+			putchar('\n');
+			break;
+		}
 	}
 }

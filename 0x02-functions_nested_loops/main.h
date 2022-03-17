@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <ctype.h>
 
 /**
 * print info prints some text to the standard output.
@@ -14,5 +15,7 @@ void printInfo(char *c);
 * lowerAlphabets - print chars to stdio in lowercase.
 *
 * @chars: alphabets
+*
+* Return: char
 */
-void lowerAlphabets(char *chars);
+char* lowerAlphabets(char *chars);
