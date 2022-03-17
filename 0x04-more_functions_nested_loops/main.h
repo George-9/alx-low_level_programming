@@ -1,5 +1,6 @@
 #include <string.h>
 #include <ctype.h>
+#include <stdio.h>
 
 /**
 * _isupper - Returns a num 1 if c is in uppercase else 0
@@ -31,3 +32,12 @@ int _isdigit(int c);
 *
 */
 int mul(int a, int b);
+
+/**
+* print_numbers - returns product of a and b
+*
+* @void: void parameters
+*
+* Return: void
+*/
+void print_numbers(void);
