@@ -41,3 +41,12 @@ int mul(int a, int b);
 * Return: void
 */
 void print_numbers(void);
+
+/**
+* print_most_numbers - prints 1 to 10 except nums '2' and '4'
+*
+* @void: void param
+*
+* Return: void
+*/
+void print_most_numbers(void);
