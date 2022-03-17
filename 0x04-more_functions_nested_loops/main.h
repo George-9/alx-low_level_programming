@@ -59,3 +59,12 @@ void print_most_numbers(void);
 * Return: a line
 */
 void print_line(int n);
+
+/**
+* more_numbers - prints a 1-14 10 times on the terminal
+*
+* @void: void
+*
+* Return: void
+*/
+void more_numbers(void);
