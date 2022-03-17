@@ -4,6 +4,7 @@
 * print_numbers - returns product of a and b
 *
 * @void: void parameters
+*
 * @a: incrementer
 *
 * Return: void
