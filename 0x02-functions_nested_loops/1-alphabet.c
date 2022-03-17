@@ -1,19 +1,7 @@
 #include "main.h"
 
 /**
-* main - Entry point
-*
-*
-* Return: always 0 (if Success)
-*/
-int main(void)
-{
-	print_alphabet();
-	return (0);
-}
-
-/**
-* printAlphabets - lower given
+* printAlphabet - lower given
 * character and print to stdio
 *
 * @void: hold chars/text to be printed
@@ -21,7 +9,7 @@ int main(void)
 */
 void print_alphabet(void)
 {
-	printInfo("abcdefghijklmnopqrstuvwxyz\n");
+	printInfo("abcdefghijklmnopqrstuvwxyz");
 }
 
 /**
@@ -43,4 +31,3 @@ void printInfo(char *d)
 		}
 	}
 }
-

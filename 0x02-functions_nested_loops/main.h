@@ -3,6 +3,16 @@
 #include <string.h>
 #include <ctype.h>
 
+#include "main.h"
+
+/**
+* main - Entry point
+*
+*
+* Return: always 0 (if Success)
+*/
+int main(void);
+
 /**
 * print info prints some text to the standard output.
 * It's being called in sother programs.
