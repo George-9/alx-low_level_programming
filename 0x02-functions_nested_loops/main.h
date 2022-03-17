@@ -4,6 +4,15 @@
 #include <ctype.h>
 
 /**
+* printInfo - print info to the console
+*
+* @c: parameter
+*
+* Return: void
+*/
+void printInfo(char *c);
+
+/**
 * print_alphabet - print chars to stdio in lowercase.
 *
 * @void: parameter as void (no return)
