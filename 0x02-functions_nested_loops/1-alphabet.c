@@ -1,10 +1,12 @@
 #include "main.h"
 
 /**
-* print_Alphabet - lower given
+* print_alphabet - lower given
 * character and print to stdio
 *
 * @void: hold chars/text to be printed
+*
+* Return: void
 */
 void print_alphabet(void)
 {
