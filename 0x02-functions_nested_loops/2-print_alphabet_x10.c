@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* print_alphabet - lower given
+* print_alphabet_x10 - lower given
 * character and print to stdio
 *
 * @void: hold chars/text to be printed
@@ -12,7 +12,7 @@ void print_alphabet_x10(void)
 {
 int c;
 
-	for (c = 0; c < 11; c++) 
+	for (c = 1; c < 11; c++)
 	printInfo("abcdefghijklmnopqrstuvwxyz");
 }
 
