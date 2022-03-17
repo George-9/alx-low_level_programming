@@ -14,7 +14,7 @@ int _isupper(int c);
 /**
 * _isdigit - Returns a num 1 if c is a digit else 0
 *
-* @c: only parameter
+* @d: only parameter
 *
 * Return: int
 *

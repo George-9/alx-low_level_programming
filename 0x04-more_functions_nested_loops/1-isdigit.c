@@ -10,9 +10,14 @@
 */
 int _isDigit(int d)
 {
-	if (isdigit(d))
+int checker;
+
+	for (checker = 0; checker < 10; checker++)
 	{
-		return (1);
+		if (isdigit(checker))
+		{
+			return (1);
+		}
+		return (0);
 	}
-	return (0);
 }
