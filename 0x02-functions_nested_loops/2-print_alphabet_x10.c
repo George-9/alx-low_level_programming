@@ -10,6 +10,9 @@
 */
 void print_alphabet(void)
 {
+int c;
+
+	for (i = 0; i < 11; i++) 
 	printInfo("abcdefghijklmnopqrstuvwxyz");
 }
 
