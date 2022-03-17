@@ -15,10 +15,16 @@ int main(void)
 void print_numbers(void)
 {
 int i;
-char *a;
-
-	for (i = 0; i < 10; i++)
+int a;
+a = 1;
+	while ((i = getchar()) != EOF)
 	{
-		putchar(*a++);
+		putchar(a);
+		if (a == 9)
+		{
+			putchar('\n');
+			break;
+		}
+		++i;
 	}
 }
