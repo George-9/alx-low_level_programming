@@ -12,10 +12,10 @@
 void printInfo(char *c);
 
 /**
-* lowerAlphabets - print chars to stdio in lowercase.
+* print_alphabet - print chars to stdio in lowercase.
 *
 * @chars: alphabets
 *
 * Return: char
 */
-void print_alphabet();
+void print_alphabet(void);

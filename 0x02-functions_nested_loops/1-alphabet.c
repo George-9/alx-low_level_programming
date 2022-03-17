@@ -19,7 +19,7 @@ int main(void)
 * @void: hold chars/text to be printed
 * @checker: check if all alphabets are printed
 */
-void print_alphabet()
+void print_alphabet(void)
 {
 	printInfo("abcdefghijklmnopqrstuvwxyz\n");
 }
