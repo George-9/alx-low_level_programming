@@ -1,11 +1,10 @@
 #include "main.h"
 
 /**
-* printAlphabet - lower given
+* print_Alphabet - lower given
 * character and print to stdio
 *
 * @void: hold chars/text to be printed
-* @checker: check if all alphabets are printed
 */
 void print_alphabet(void)
 {
