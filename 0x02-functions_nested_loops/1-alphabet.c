@@ -8,26 +8,20 @@
 */
 int main(void)
 {
-	printInfo((lowerAlphabets("ABCDEFGHIJKLMNOPQRSTUVWXYZ\n")));
+	print_alphabet();
 	return (0);
 }
 
 /**
-* lowerCharacter - lower given
+* printAlphabets - lower given
 * character and print to stdio
 *
-* @c: hold chars/text to be printed
+* @void: hold chars/text to be printed
 * @checker: check if all alphabets are printed
 */
-char *lowerAlphabets(char c[])
+void print_alphabet()
 {
-int looper, len = (strlen(c));
-char *checker = NULL;
-	for (looper = 0; looper < len; looper++)
-	{
-		*checker += (tolower(c[looper]));
-	}
-	return (c);
+	printInfo("abcdefghijklmnopqrstuvwxyz\n");
 }
 
 /**
@@ -49,3 +43,4 @@ void printInfo(char *d)
 		}
 	}
 }
+

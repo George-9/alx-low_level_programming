@@ -18,4 +18,4 @@ void printInfo(char *c);
 *
 * Return: char
 */
-char* lowerAlphabets(char *chars);
+void print_alphabet();
