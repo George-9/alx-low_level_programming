@@ -1,4 +1,15 @@
 #include "main.h"
+#include "0-putchar.c"
+/**
+* main - Entry point
+*
+* Return: 
+*/
+int main(void)
+{
+	print_alphabet();
+	return (0);
+}
 
 /**
 * printAlphabet - lower given
