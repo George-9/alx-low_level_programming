@@ -12,7 +12,7 @@ int _isDigit(int d)
 {
 int checker;
 
-	for (checker = 0; checker < 10; checker++)
+	for (checker = 0; checker < 9; checker++)
 	{
 		if (isdigit(checker))
 		{
