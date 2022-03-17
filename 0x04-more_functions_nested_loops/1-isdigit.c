@@ -10,12 +10,9 @@
 */
 int _isDigit(int d)
 {
-	for (d = 0; d < 9; d++)
+	if (isdigit(d))
 	{
-		if (isdigit(d))
-		{
-			return (1);
-		}
-		return (0);
+		return (1);
 	}
+		return (0);
 }
