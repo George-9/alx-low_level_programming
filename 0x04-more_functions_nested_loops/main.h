@@ -2,7 +2,7 @@
 #include <ctype.h>
 
 /**
-* _isupper - Returns a num 1 or 0 according to the checked character
+* _isupper - Returns a num 1 if c is in uppercase else 0
 *
 * @c: only parameter
 *
@@ -10,3 +10,13 @@
 *
 */
 int _isupper(int c);
+
+/**
+* _isdigit - Returns a num 1 if c is a digit else 0
+*
+* @c: only parameter
+*
+* Return: int
+*
+*/
+int _isDigit(int d);
