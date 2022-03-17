@@ -1,9 +1,9 @@
 #include "main.h"
-#include "0-putchar.c"
+
 /**
 * main - Entry point
 *
-* Return: 
+* Return:
 */
 int main(void)
 {

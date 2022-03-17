@@ -3,8 +3,6 @@
 #include <string.h>
 #include <ctype.h>
 
-#include "main.h"
-
 /**
 * main - Entry point
 *
@@ -18,14 +16,15 @@ int main(void);
 * It's being called in sother programs.
 * @c: (char) is a parameter  for the string to be printed to the
 *"stdio"
+* Return: char*
 */
 void printInfo(char *c);
 
 /**
 * print_alphabet - print chars to stdio in lowercase.
 *
-* @chars: alphabets
+* @void: parameter as void (no return)
 *
-* Return: char
+* Return: void
 */
 void print_alphabet(void);
