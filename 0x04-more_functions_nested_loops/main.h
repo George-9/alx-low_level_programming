@@ -19,4 +19,4 @@ int _isupper(int c);
 * Return: int
 *
 */
-int _isDigit(int c);
+int _isdigit(int c);
