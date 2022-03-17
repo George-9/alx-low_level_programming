@@ -8,11 +8,11 @@
 *
 * Return: void
 */
-void print_alphabet(void)
+void print_alphabet_x10(void)
 {
 int c;
 
-	for (i = 0; i < 11; i++) 
+	for (c = 0; c < 11; c++) 
 	printInfo("abcdefghijklmnopqrstuvwxyz");
 }
 
