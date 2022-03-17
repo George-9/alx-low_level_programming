@@ -3,14 +3,14 @@
 /**
 * _isdigit - Returns a num 1 if c is a digit else 0
 *
-* @d: only parameter
+* @c: only parameter
 *
 * Return: int
 *
 */
-int _isDigit(int d)
+int _isDigit(int c)
 {
-	if (isdigit(d))
+	if (isdigit(c))
 	{
 		return (1);
 	}
