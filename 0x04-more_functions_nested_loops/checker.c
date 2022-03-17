@@ -1,18 +1,20 @@
-#include "main.h"
-#include <stdio.h>
+/* C program to print a long int number 
+ using putchar() only*/
+#include <stdio.h> 
+  
+int main() 
+{ 
+char a;
+for (a = '0'; a <= '9'; a++){
+    /* code */
+    putchar(a);
+    if (a == '9')
+    {
+        /* code */
+        putchar('\n');
+    }
+    
+}
 
-/**
- * main - check the code
- *
- * Return: Always 0.
- */
-int main(void)
-{
-    char c;
-
-    c = '0';
-    printf("%c: %d\n", c, _isdigit(c));
-    c = 'a';
-    printf("%c: %d\n", c, _isdigit(c));
-    return (0);
+    return 0; 
 }
