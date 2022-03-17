@@ -15,11 +15,9 @@ char a;
 	{
 		putchar(a);
 		if (a == 2 || a == 4)
-		continue;
-
-		if (a == 9)
 		{
-			putchar('\n');
+			continue;
 		}
 	}
+	putchar('\n');
 }
