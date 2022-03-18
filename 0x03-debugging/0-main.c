@@ -3,14 +3,13 @@
 #include <string.h>
 
 /**
-* positive_or_negative - method1
-*
-* @i:  param for number to check
+* main - Entry point
 *
 * Return: void
 */
 int main(void)
 {
-	positive_or_negative(8);
+int i;
+	positive_or_negative(i);
 	return (0);
 }
