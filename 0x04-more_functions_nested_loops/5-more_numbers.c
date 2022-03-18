@@ -1,12 +1,9 @@
 #include "main.h"
-int main(void){more_numbers(); return (0);}
+
 /**
 * more_numbers - print numbers 1-14
 *
 * @void: no parameters
-* @looper: loop times of print
-* @num_count: count nums upto 14
-*
 * Return: void
 *
 */
