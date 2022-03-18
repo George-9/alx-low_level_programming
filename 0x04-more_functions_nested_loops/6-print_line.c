@@ -15,6 +15,11 @@ char data = '_';
 
 	for (count = 0; count <= n; count++)
 	{
+		if (n <= 0)
+		{
+			putchar('\n');
+			return;
+		}
 		putchar(data);
 	}
 	putchar('\n');
