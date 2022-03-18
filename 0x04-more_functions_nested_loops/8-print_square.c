@@ -7,11 +7,12 @@
 *
 * Return: void
 */
+
 void print_square(int size)
 {
 int loop, count;
 
-	for (loop = 1, loop < size; loop++)
+	for (loop = 1; loop < size; loop++)
 	{
 		for (count = 1; count < size; count++)
 		{
