@@ -68,3 +68,15 @@ void print_line(int n);
 * Return: void
 */
 void more_numbers(void);
+
+#include "main.h"
+
+/**
+* print_diagonal - Returns a num 1 or 0 according to the checked character
+*
+* @n: only parameter
+*
+* Return: line
+*
+*/
+void print_diagonal(int n);
