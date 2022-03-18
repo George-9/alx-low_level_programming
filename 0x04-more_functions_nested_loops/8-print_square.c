@@ -25,7 +25,3 @@ int loop, count;
 		putchar('\n');
 	}
 }
-
-int main(void){
-print_square(9);	
-}
