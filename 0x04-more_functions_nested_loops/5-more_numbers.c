@@ -1,5 +1,5 @@
 #include "main.h"
-
+int main(void){more_numbers(); return (0);}
 /**
 * more_numbers - print numbers 1-14
 *
