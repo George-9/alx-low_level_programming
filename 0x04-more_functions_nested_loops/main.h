@@ -80,3 +80,12 @@ void more_numbers(void);
 *
 */
 void print_diagonal(int n);
+
+/**
+* print_square - print a square using #
+*
+* @size: print square these number of times
+*
+* Return: void
+*/
+void print_square(int size);
