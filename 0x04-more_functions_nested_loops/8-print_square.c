@@ -7,14 +7,13 @@
 *
 * Return: void
 */
-
 void print_square(int size)
 {
 int loop, count;
 
-	for (loop = 1; loop < size; loop++)
+	for (loop = 1; loop <= size; loop++)
 	{
-		for (count = 1; count < size; count++)
+		for (count = 1; count <= size; count++)
 		{
 			if (count <= 0)
 			{
@@ -25,4 +24,8 @@ int loop, count;
 		}
 		putchar('\n');
 	}
+}
+
+int main(void){
+print_square(9);	
 }
