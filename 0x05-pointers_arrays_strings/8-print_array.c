@@ -14,9 +14,9 @@ void print_array(int *a, int n)
 
 	for (len = 0; len < n; len++)
 	{
-		if (len == sizeof(a))
-		return;
-		printf("%d, ", a[len]);
+		printf("%d", a[len]);
+		if (len != n)
+		printf("%s ", ",");
 	}
 	puts("\n");
 }
