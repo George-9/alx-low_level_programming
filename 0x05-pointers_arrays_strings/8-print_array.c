@@ -18,5 +18,5 @@ void print_array(int *a, int n)
 		if (len != n)
 		printf("%s ", ",");
 	}
-	printf("%c", "\n");
+	printf("%s", "\n");
 }
