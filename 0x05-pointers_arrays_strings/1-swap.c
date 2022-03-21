@@ -5,7 +5,6 @@
 *
 * @a: first parameter (Integer)
 * @b: second ....... (Integer)
-* @c: temporary holder
 *
 * Return: void
 *
