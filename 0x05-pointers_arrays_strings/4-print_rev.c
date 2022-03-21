@@ -18,4 +18,5 @@ int i, len, temp;
 		s[i] = s[len - i - 1];
 		s[len - i - 1] = temp;
 	}
+	puts(s);
 }
