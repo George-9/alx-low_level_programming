@@ -5,16 +5,17 @@
 *
 * @a: first parameter (Integer)
 * @b: second ....... (Integer)
+* @c: temporary holder
 *
-*Return: void
+* Return: void
 *
 */
 
 void swap_int(int *a, int *b)
 {
-	int *temp = a;
-	int *temp1 = b;
+	int c;
 
-	a = &*temp1;
-	b = &*temp;
+	c = *b;
+	*b = *a;
+	*a = *&c;
 }
