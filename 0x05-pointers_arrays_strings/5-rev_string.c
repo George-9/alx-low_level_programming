@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
-* print_rev - returns the param as a reversed string
+* rev_string - returns the param as a reversed string
 *
 * @s: param
 * Return: String
 */
-void print_rev(char *s)
+void rev_string(char *s)
 {
 int i, len, temp;
 
@@ -18,5 +18,5 @@ int i, len, temp;
 		s[i] = s[len - i - 1];
 		s[len - i - 1] = temp;
 	}
-	return (s);
+	puts(s);
 }
