@@ -18,6 +18,6 @@ void swap_int(int *a, int *b)
 	*a = *b;
 	*b = *a;
 
-	println("a=%d, b=%d\n", a, b);
-	println("a=%d, b=%d\n", a, b);
+	printlf("a=%d, b=%d\n", a, b);
+	printlf("a=%d, b=%d\n", a, b);
 }
