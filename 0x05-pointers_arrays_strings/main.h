@@ -16,3 +16,5 @@ void rev_string(char *s);
 char *_strcopy(char *dest, char *src);
 
 void print_array(int *a, int n);
+
+void puts2(char *str);
