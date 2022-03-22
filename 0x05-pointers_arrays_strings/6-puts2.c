@@ -16,6 +16,11 @@ int size;
 	for (len_looper = 0; len_looper < size; len_looper += 2)
 	{
 		putchar(str[len_looper]);
+		if (len_looper == size)
+		{
+			putchar('\n');
+			return;
+		}
 	}
 	puts("\n");
 }
