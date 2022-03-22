@@ -13,7 +13,7 @@ int len_looper;
 int size;
 
 	size = sizeof(str);
-	for (len = 0; len_looper < size; len += 2)
+	for (len_looper = 0; len_looper < size; len_looper += 2)
 	{
 		puts(str[len_looper]);
 	}
