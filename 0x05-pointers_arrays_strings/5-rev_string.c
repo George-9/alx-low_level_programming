@@ -9,10 +9,12 @@
 void rev_string(char *s)
 {
 int i, len;
-char *d;
 
 	len = strlen(s);
 
-	for (i = len; i > -1; i--)
-	strcopy(d, s[i])
+	for (i = (len - 1); i > -1; i--)
+	{
+		putchar(s[i]);
+	}
+	putchar('\n');
 }
