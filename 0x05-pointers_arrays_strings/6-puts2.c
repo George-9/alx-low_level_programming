@@ -12,9 +12,9 @@ void puts2(char *str)
 int len_looper;
 int size;
 
-	size = sizeof(str);
+	size = strlen(str);
 	for (len_looper = 0; len_looper < size; len_looper += 2)
 	{
-		puts(str[len_looper]);
+		putchar(str[len_looper]);
 	}
 }
