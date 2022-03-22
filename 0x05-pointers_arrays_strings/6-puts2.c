@@ -9,10 +9,12 @@
 */
 void puts2(char *str)
 {
-int len;
+int len_looper;
+int size;
 
-	for (len = 0; len < sizeof(str); len += 2)
+	size = sizeof(str);
+	for (len = 0; len_looper < size; len += 2)
 	{
-		puts(str[len]);
+		puts(str[len_looper]);
 	}
 }
