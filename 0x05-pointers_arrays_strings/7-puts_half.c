@@ -12,7 +12,7 @@ void puts_half(char *str)
 {
 int length, looper;
 
-	length = sizeof(str);
+	length = strlen(str);
 	for (looper = 0; looper < length; looper++)
 	{
 		if(looper >= length / 2)
