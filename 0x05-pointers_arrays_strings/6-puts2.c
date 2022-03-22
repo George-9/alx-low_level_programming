@@ -22,5 +22,5 @@ int size;
 			return;
 		}
 	}
-	puts("\n");
+	putchar('\n');
 }
