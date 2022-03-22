@@ -17,4 +17,5 @@ int size;
 	{
 		putchar(str[len_looper]);
 	}
+	putchar("\n");
 }
