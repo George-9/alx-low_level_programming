@@ -10,15 +10,26 @@
 */
 void puts_half(char *str)
 {
-int length, looper;
 
-	length = strlen(str);
-	for (looper = 0; looper < length; looper++)
+	int l, i;
+	char *begin_ptr, *end_ptr, ch;
+
+	l = strlen(str);
+
+	begin_ptr = str;
+	end_ptr = str;
+
+	for (i = 0; i < l - 1; i++)
+		end_ptr++;
+
+	for (i = 0; i < l / 2; i++)
 	{
-		if (looper >= length / 2)
-		{
-			printf("%c", str[looper]);
-		}
+		ch = *end_ptr;
+		*end_ptr = *begin_ptr;
+		*begin_ptr = ch;
+
+		begin_ptr++;
+		end_ptr--;
 	}
 	putchar('\n');
 }
