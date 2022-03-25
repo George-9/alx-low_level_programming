@@ -10,17 +10,5 @@
 */
 char *_strcat(char *dest, char *src)
 {
-	char *p = malloc(strlen(dest) + strlen(src) + 1);
-	int ptr = 0, temp = 0;
-
-	while (dest[temp] != '\0')
-	{
-		p[ptr++] = s[temp++];
-	}
-	temp = 0;
-	while (dest[temp] != '\0')
-	{
-		p[ptr++] = t[temp++];
-	}
-	return (p);
+	return (strcat(dest, src));
 }
