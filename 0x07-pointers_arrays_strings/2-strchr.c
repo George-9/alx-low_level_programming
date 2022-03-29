@@ -22,7 +22,7 @@ char *p;
 			break;
 		}
 	}
-	if (p != null)
+	if (p != NULL)
 	{
 		return (p);
 	}
