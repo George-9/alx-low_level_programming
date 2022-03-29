@@ -15,7 +15,7 @@ unsigned int loop;
 
 	for (loop = 0; loop < n; loop++)
 	{
-		dest[i] = src[i];
+		dest[loop] = src[loop];
 	}
 	return (dest);
 }
