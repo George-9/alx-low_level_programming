@@ -9,7 +9,7 @@
 *
 * Return: none
 */
-void *_memset(char *s, char b, unsigned int n)
+char *_memset(char *s, char b, unsigned int n)
 {
 unsigned int i;
 
@@ -17,4 +17,5 @@ unsigned int i;
 	{
 		s[i] = b;
 	}
+	return (s);
 }
