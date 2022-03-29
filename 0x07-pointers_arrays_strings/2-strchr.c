@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* -strchr - checks ocurrence of c in s and returns a conditional pointer
+* _strchr - checks ocurrence of c in s and returns a conditional pointer
 *
 * @s: source of string
 * @c: character to check
@@ -24,7 +24,7 @@ char *p;
 	}
 	if (p != null)
 	{
-		return p;
+		return (p);
 	}
 	else
 	return (NULL);
