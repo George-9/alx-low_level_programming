@@ -17,7 +17,7 @@ int looper;
 	{
 		if (s[looper] == c])
 		{
-			return (&s[count + 1);
+			return (s[count + 1);
 		}
 	}
 }
