@@ -11,7 +11,7 @@
 */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-int loop;
+unsigned int loop;
 
 	for (loop = 0; loop < n; loop++)
 	{
