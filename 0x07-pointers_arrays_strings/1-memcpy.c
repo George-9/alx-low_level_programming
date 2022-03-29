@@ -15,5 +15,5 @@ char *tmp;
 
 	memcpy(dest, src, strlen(tmp) + 1);
 	tmp = dest;
-	return (tmp);
+	return (*tmp);
 }
