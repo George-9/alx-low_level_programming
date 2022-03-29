@@ -12,20 +12,12 @@
 char *_strchr(char *s, char c)
 {
 int looper;
-char *p;
 
-	for (p = 0; p < s[looper] != '\0'; looper++)
+	for (looper = 0; s[looper] != '\0'; looper++)
 	{
-		if (s[looper] == c)
+		if (s[looper] == c])
 		{
-			p = c;
-			break;
+			return (&s[count + 1);
 		}
 	}
-	if (p != NULL)
-	{
-		return (p);
-	}
-	else
-	return (NULL);
 }
