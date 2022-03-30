@@ -1,4 +1,4 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
 * _strchr - checks ocurrence of c in s and returns a conditional pointer
