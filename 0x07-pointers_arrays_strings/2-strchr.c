@@ -13,11 +13,16 @@ char *_strchr(char *s, char c)
 {
 int looper;
 
-	for (looper = 0; s[looper] != '\0'; looper++)
+	while(1)
 	{
-		if (s[looper] == c])
+		looper = *s++;
+		if (looper == c)
 		{
-			return (s[count + 1);
+			return (s - 1);
+		}
+		if (a == 0)
+		{
+			return (NULL);
 		}
 	}
 }
