@@ -13,7 +13,7 @@ char *_strchr(char *s, char c)
 {
 int looper;
 
-	while(1)
+	while (1)
 	{
 		looper = *s++;
 		if (looper == c)
