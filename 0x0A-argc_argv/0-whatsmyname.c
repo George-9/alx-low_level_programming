@@ -10,8 +10,6 @@
 */
 int main(int argc, char *argv[])
 {
-char *a;
-	a = argv[0];
-	puts(a);
+	puts(argv[0]);
 	return (0);
 }
