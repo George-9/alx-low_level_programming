@@ -10,10 +10,11 @@
 */
 int main(int argc, char *argv[])
 {
-int mul = 1, len;
-long val;
-char *next;
-	if (!argv[1])
+	long val = 0;
+	int mul = 0, len;
+	char *next;
+
+	if (!argv[val + 1])
 	{
 		puts("0");
 		return (1);
@@ -27,7 +28,7 @@ char *next;
 			puts("error");
 			return (1);
 		}
-		mul = mul * atoi(argv[len]);
+		mul = mul + atoi(argv[len]);
 	}
 	printf("%i\n", mul);
 	return (0);
