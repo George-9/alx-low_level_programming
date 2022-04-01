@@ -6,15 +6,16 @@
 * @argc: number of arguments for main
 * @argv: arguments for main
 *
-* Return - 0 if success (> 0) if error
+* Return: 0 if success (> 0) if error
 */
 int main(int argc, char *argv[])
 {
+	(void)argc;
 int count;
 	if (!argv[1] || !argv[2])
 	{
 	puts("error");
-	return 1;
+	return (1);
 	}
 	else
 	{
