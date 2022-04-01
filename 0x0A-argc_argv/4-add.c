@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 
 	if (!argv[val + 1])
 	{
-		puts("0");
+		printf("%i", 0);
 		return (1);
 	}
 
