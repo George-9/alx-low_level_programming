@@ -6,7 +6,7 @@
 * @argc: number of arguments for main
 * @argv: arguments for main
 *
-* Return - 0 if success (> 0) if error
+* Return: 0 if success (> 0) if error
 */
 int main(int argc, char *argv[])
 {
@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 
 	for (len = 1; len < argc; len++)
 	{
-		val = strtol (argv[len], &next, 10);
+		val = strtol(argv[len], &next, 10);
 		if (next == argv[len] || (*next != '\0'))
 		{
 			puts("error");
