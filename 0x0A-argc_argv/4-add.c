@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
 		val = strtol(argv[len], &next, 10);
 		if (next == argv[len] || (*next != '\0'))
 		{
-			puts("error");
+			puts("Error");
 			return (1);
 		}
 		mul = mul + atoi(argv[len]);
