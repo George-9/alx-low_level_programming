@@ -10,8 +10,9 @@
 */
 int main(int argc, char *argv[])
 {
+	int count;
 	(void)argc;
-int count;
+
 	if (!argv[1] || !argv[2])
 	{
 	puts("error");
