@@ -10,7 +10,6 @@
 */
 int main(int argc, char *argv[])
 {
-int looper;
 	while(argc--)
 	{
 		puts(*argv);
