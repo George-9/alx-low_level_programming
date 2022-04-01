@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 
 	if (!argv[1] || !argv[2])
 	{
-	puts("error");
+	puts("Error");
 	return (1);
 	}
 	else
