@@ -3,11 +3,11 @@
 #include "holberton.h"
 
 /**
-* main - read file contents and print them to the POSIX
+* read_textfile - read file contents and print them to the POSIX
 *
-* @fPointer - the read content
-* @data - hold data [the content]
-*
+* @filename: name of file
+* @letters: number of characters to read from file 
+**
 * Return: actual number of files it could read 0 otherwise
 */
 ssize_t read_textfile(const char *filename, size_t letters)
@@ -17,15 +17,15 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	data  = malloc(letters);
 
-	if(text == NULL)
+	if (text == NULL)
 		return (0);
 
-	if(filename == NULL)
+	if (filename == NULL)
 		return (0);
 
 	file = fopen(filename, "r");
 
-	if(file == -1)
+	if (file == -1)
 	{
 		free(data);
 		return (0);
