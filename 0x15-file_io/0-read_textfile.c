@@ -11,13 +11,17 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	FILE *fPointer;
-	char data[letters];
+	char data;
+	size_t count = 0;
 
 	fPointer = fopen(filename, "r");
 
-	while(fgets(data, letters, fPointer) != NULL)
-	{
-		printf("%s\n", data);
-	}
+	do{
+		data = fgetc(fPointer);
+		printf("%c", data);
+		count++;	
+	}while(data != NULL);
+
 	fclose(fPointer);
+	return (0);
 }
