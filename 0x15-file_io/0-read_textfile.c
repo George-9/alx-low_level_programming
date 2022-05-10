@@ -6,7 +6,7 @@
 * read_textfile - read file contents and print them to the POSIX
 *
 * @filename: name of file
-* @letters: number of characters to read from file 
+* @letters: number of characters to read from file
 *
 * Return: actual number of files it could read 0 otherwise
 */
@@ -17,7 +17,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	data  = malloc(letters);
 
-	if (text == NULL)
+	if (data == NULL)
 		return (0);
 
 	if (filename == NULL)
@@ -30,10 +30,10 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		free(data);
 		return (0);
 	}
-	
+
 	let = read(file, data, letters);
 
-	w = write(STDOUT_NO, data, let);
+	w = write(stdout, data, let);
 
 	close(file);
 
