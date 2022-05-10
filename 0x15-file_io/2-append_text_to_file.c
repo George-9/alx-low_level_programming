@@ -13,30 +13,24 @@
 */
 int append_text_to_file(char *filename, char *text_content)
 {
-	FILE *check;
-	int opened;
-	int checkExists;
+	int opened = 0, file;
 
 	if (filename == NULL)
 		return (-1);
 
 	if (text_content == NULL)
-		return (-1);
+		text_content = "";
 
-	opened = fopen(filename, "a+");
-
-	if ((opened == -1))
-		return (-1);
-
-	checkExists = (check = fopen(filename, "r"));
-
-	if (checkExists)
+	while (text_content[opened] != '\0')
 	{
-		fputs(text_content, opened);
-		fclose(opened);
-
-		return (1);
+		opened++;
 	}
-	else
+	opened = fopen(filename, O_WRONLY | O_APPEND);
+
+	if (opened == -1)
 		return (-1);
+
+	write_file(file, text_content, opened);
+
+	return (1);
 }
