@@ -1,3 +1,5 @@
+#include <stdlib.h>
+#include <stdio.h>
 #include "holberton.h"
 
 /**
@@ -6,22 +8,34 @@
 * @fPointer - the read content
 * @data - hold data [the content]
 *
-* Return: 0 (Success)
+* Return: actual number of files it could read 0 otherwise
 */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	FILE *fPointer;
-	char data;
-	size_t count = 0;
+	char *data;
+	size_t file, let, w;
 
-	fPointer = fopen(filename, "r");
+	data  = malloc(letters);
 
-	do{
-		data = fgetc(fPointer);
-		printf("%c", data);
-		count++;	
-	}while(data != NULL);
+	if(text == NULL)
+		return (0);
 
-	fclose(fPointer);
-	return (0);
+	if(filename == NULL)
+		return (0);
+
+	file = fopen(filename, "r");
+
+	if(file == -1)
+	{
+		free(data);
+		return (0);
+	}
+	
+	let = read(file, data, letters);
+
+	w = write(STDOUT_NO, data, let);
+
+	close(file);
+
+	return (w);
 }
