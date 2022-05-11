@@ -25,9 +25,9 @@ int append_text_to_file(char *filename, char *text_content)
 	{
 		opened++;
 	}
-	opened = fopen(filename, O_WRONLY | O_APPEND);
+	file = fopen(filename, O_WRONLY | O_APPEND);
 
-	if (opened == -1)
+	if (file == -1)
 		return (-1);
 
 	write_file(file, text_content, opened);
