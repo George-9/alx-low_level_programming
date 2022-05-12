@@ -2,4 +2,4 @@
 #include <stdio.h>
 #include <string.h>
 
-void ((*f)(char *));
+void print_name(char *name, void (*f)(char *));
