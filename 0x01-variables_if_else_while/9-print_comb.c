@@ -3,7 +3,7 @@
 /**
 * main - program entry point
 *
-* @void: no params
+* @void: no params for the main function
 *
 * Return: (int) 0 on success [always 0]
 */
