@@ -14,7 +14,7 @@ int main(void)
 	for (the_num = '0'; the_num <= '9'; the_num++)
 	{
 		putchar(the_num);
-		if (the_num < '9')
+		if (the_num <= '8')
 		{
 			putchar(',');
 			putchar(' ');
