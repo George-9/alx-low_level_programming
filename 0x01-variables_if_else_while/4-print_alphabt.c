@@ -10,7 +10,7 @@ int main(void)
 {
 	char p_char;
 
-	for (p_char = 'a'; p_char < 'z'; p_char++)
+	for (p_char = 'a'; p_char <= 'z'; p_char++)
 	{
 		if (p_char != 'e' && p_char != 'q')
 			putchar(p_char);
