@@ -5,8 +5,8 @@
  *  @void: - no params
  *  Return: int (0) if success [always 0]
  * /
-int main(void) {
-
+int main(void)
+{
 	char start;
 
 	start = 'A';
