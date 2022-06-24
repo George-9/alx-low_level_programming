@@ -12,14 +12,11 @@ int main(void)
 	int the_num;
 
 	the_num = '0';
-	while (the_num < '9')
+	while (the_num <= '8')
 	{
 		putchar(the_num);
-		if (the_num < '9')
-		{
-			putchar(',');
-			putchar(' ');
-		}
+		putchar(',');
+		putchar(' ');
 		the_num++;
 	}
 	putchar(the_num++);
