@@ -1,5 +1,5 @@
 /**
-* _islower: function that returs 1 or 0 based on the given parameter
+* _islower - function that returs 1 or 0 based on the given parameter
 *
 * @c: character to check
 *
@@ -13,8 +13,8 @@ int _islower(int c)
 	{
 		if (c == checker)
 		{
-			return 1;
+			return (1);
 		}
 	}
-	return 0;
+	return (0);
 }
