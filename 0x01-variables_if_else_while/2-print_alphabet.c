@@ -9,12 +9,14 @@
 int main(void)
 {
 	char start;
+	int i = 32;
 
 	start = 'A';
 
-	for (int i = 32; i < 58; i++)
+	while (i < 58)
 	{
 		putchar(start + i);
+		++i;
 	}
 	putchar('\n');
 	return (0);
