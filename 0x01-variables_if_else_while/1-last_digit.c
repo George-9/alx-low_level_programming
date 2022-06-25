@@ -25,6 +25,6 @@ int main(void)
 	d = n % 10;
 
 	printf("Last digit of %d is %d %s", n, d, d > 5 ? a : d == 0 ? b : c);
-
+	putchar('\n');
 	return (0);
 }
