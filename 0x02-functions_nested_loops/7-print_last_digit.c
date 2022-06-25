@@ -11,9 +11,9 @@ int print_last_digit(int num)
 {
 	int last_digit;
 
-	last_digit = num % 10;
+	last_digit = num < 0 ? (num * -1) % 10 : num % 10;
 
-	printf("%d", last_digit);
+	putchar(last_digit + '0');
 
 	return (last_digit);
 }
