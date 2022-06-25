@@ -14,11 +14,12 @@ int main(void)
 
 	data = "_putchar";
 
-	while(*data)
+	while (*data)
 	{
 		putchar(*data);
 		data++;
 	}
 	putchar('\n');
-	return(0);
+
+	return (0);
 }
