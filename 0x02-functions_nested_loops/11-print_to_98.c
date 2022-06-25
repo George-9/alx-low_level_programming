@@ -38,4 +38,5 @@ void print_to_98(int n)
 	_putchar(first_digit);
 	_putchar(last_digit);
 	}
+	_putchar('\n');
 }
