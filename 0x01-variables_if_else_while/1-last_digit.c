@@ -24,7 +24,7 @@ int main(void)
 	c = "and is less than 6 and not 0";
 	d = n % 10;
 
-	printf("Last digit of %d is %d and is %s", n, d, d > 5 ? a : d == 0 ? b : c);
+	printf("Last digit of %d is %d %s", n, d, d > 5 ? a : d == 0 ? b : c);
 
 	return (0);
 }
