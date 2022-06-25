@@ -3,6 +3,8 @@
 /**
 * _abs - return the absolute value of an integer
 *
+* @num: first and only param
+*
 * Return: absolute value
 */
 int _abs(int num)
