@@ -9,7 +9,7 @@
 */
 void print_to_98(int n)
 {
-	int loop, first_digit, second_digit;
+	int loop, first_digit, last_digit;
 
 	if (n == 98)
 	{
