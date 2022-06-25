@@ -6,7 +6,7 @@
 *
 * Description: prints "0" if n is zero "-" if n is negative otherwise "1"
 *
-* Return: -1 if n is negative 0 if n is 0 or 1 if n is positive(greater than zero)
+* Return: -1 if n is negative 0 if n is 0 or 1 if n is positive
 */
 int print_sign(int n)
 {
