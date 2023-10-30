@@ -7,7 +7,10 @@
 */
 int main(void)
 {
-	for (int i = 0; i < 90; i++)
+	size_t i;
+
+	i = 0;
+	for (; i < 90; i++)
 	{
 		if (i < 10)
 		{
