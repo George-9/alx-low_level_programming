@@ -7,29 +7,25 @@
 */
 int main(void)
 {
-	size_t i;
+	size_t i, t;
 
 	i = 0;
-	for (; i < 90; i++)
+	for (; i < 10; i++)
 	{
-		if (i < 10)
+		for (t = 1; t < 10; t++)
 		{
-			putchar('0');
-			putchar(i + '0');
-		}
-		else
-		{
-			putchar((i / 10) + '0');
-			putchar((i % 10) + '0');
-		}
+			if (i != t)
+			{
+				putchar(i + '0');
+				putchar(t + '0');
 
-		if (i < 89)
-		{
-			putchar(',');
-			putchar(' ');
+				if ((i + t) != 17)
+					putchar(',');
+				putchar(' ');
+			}
 		}
 	}
-	putchar('\n');
 
+	putchar('\n');
 	return (0);
 }
