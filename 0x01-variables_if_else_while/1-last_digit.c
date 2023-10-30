@@ -17,7 +17,7 @@ int main(void)
 	ld = n < 0 ? n % 10 : n % 10;
 
 	if (ld == 0)
-		msg = " and is zero";
+		msg = " and is 0";
 	else if (ld < 6 && ld != 0)
 		msg = " and is less than 6 and not 0";
 	else
