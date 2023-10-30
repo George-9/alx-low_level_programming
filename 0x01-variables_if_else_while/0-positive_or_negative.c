@@ -10,10 +10,12 @@
 int main(void)
 {
 	int n;
+	char *msg;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	char *msg = n < 0 ? "is negative" : n == 0 ? "is zero" : "is positive";
+	msg = n < 0 ? "is negative" : n == 0 ? "is zero" : "is positive";
+
 	printf("%d ", n);
 	puts(msg);
 
