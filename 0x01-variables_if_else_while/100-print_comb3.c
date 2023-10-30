@@ -7,10 +7,7 @@
 */
 int main(void)
 {
-	int i;
-
-	i = 0;
-	for (; i < 90; i++)
+	for (int i = 0; i < 90; i++)
 	{
 		if (i < 10)
 		{
