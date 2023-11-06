@@ -17,8 +17,11 @@ void times_table(void)
 
 			if ((i * l) != 81)
 			{
-				_putchar(',');
-				_putchar(' ');
+				if (l < 9)
+				{
+					_putchar(',');
+					_putchar(' ');
+				}
 
 				if ((i * l) < 10)
 				{
