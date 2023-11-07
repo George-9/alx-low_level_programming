@@ -15,7 +15,18 @@ void puts_half(char *str)
 	while (*tmp++ != '\0')
 		chckr++;
 
-	n = ((chckr % 2) == 0) ? chckr / 2 : ((chckr - 1) / 2 );
+	/**n = ((chckr % 2) == 0) ? chckr / 2 : ((chckr - 1) / 2 );*/
+
+	if ((chckr % 2) == 0)
+	{
+		n = chckr / 2;
+	}
+	else
+	{
+		n = ((chckr - 1) / 2);
+		n++;
+	}
+
 	for (; n < chckr; n++)
 		_putchar(*(str + n));
 
