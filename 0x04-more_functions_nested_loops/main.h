@@ -15,3 +15,4 @@ void print_to_98(int n);
 void print_number(int n);
 int add(int, int);
 int mul(int a, int b);
+void print_numbers(void);
