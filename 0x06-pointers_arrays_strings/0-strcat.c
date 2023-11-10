@@ -1,7 +1,5 @@
 #include "main.h"
 
-size_t str_len(char *str);
-
 /**
 * _strcat - concantenates two strings
 *
@@ -12,37 +10,19 @@ size_t str_len(char *str);
 */
 char *_strcat(char *dest, char *src)
 {
-	int l_1, l_2;
-	char *cont;
+	char *cont = dest;
 
-	l_1 = str_len(dest);
-	l_2 = str_len(src);
+	while (*cont != '\0')
+		cont++;
 
-	cont = malloc((l_1 + l_2 + 1) * sizeof(char));
+	while (*src != '\0')
+	{
+		*cont = *src;
+		cont++;
+		src++;
+	}
 
-	while (*dest++ != '\0')
-		*cont++ = *dest;
-
-	while (*src++ != '\0')
-		*cont++ = *src;
+	*cont = '\0';
 
 	return (cont);
-}
-
-/**
- * str_len - gets the number of characters in a string
- *
- * @str: the string
- *
- * Return: length of str
- */
-size_t str_len(char *str)
-{
-	char *tmp = str;
-	size_t l = 0;
-
-	while (*tmp++ != '\0')
-		l++;
-
-	return (l);
 }
