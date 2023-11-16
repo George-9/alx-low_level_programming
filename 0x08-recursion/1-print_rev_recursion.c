@@ -41,7 +41,7 @@ void _r(char *s, int l)
  */
 int _str_len(char *s, int l)
 {
-	if (s[l + 1] == '\0')
+	if (s[l] == '\0')
 		return (l);
 	
 	return (_str_len(s, l + 1));
