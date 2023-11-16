@@ -23,7 +23,12 @@ void _print_rev_recursion(char *s)
  */
 void _r(char *s, int l)
 {
-	if (l < 0)
+	if (*s == '\0')
+	{
+		_putchar('\0');
+		return;
+	}
+	else if (l < 0)
 		return;
 
 	_putchar(s[l]);
