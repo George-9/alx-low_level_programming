@@ -24,11 +24,11 @@ void _print_rev_recursion(char *s)
 void _r(char *s, int l)
 {
 	if (l == 0)
-	{
-		_putchar('\n');
 		return;
-	}
-	_putchar(s[l]);
+
+	if (s[l] != '\n')
+		_putchar(s[l]);
+
 	_r(s, l - 1);
 }
 
@@ -41,7 +41,8 @@ void _r(char *s, int l)
  */
 int _str_len(char *s, int l)
 {
-	if (s[l] == '\0')
+	if (s[l + 1] == '\0')
 		return (l);
+	
 	return (_str_len(s, l + 1));
 }
