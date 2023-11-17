@@ -1,13 +1,13 @@
 #include "main.h"
 
-**
+/**
  * main - program main entry point
  * @argv: the cmd line arguments of the program
- * @argvc: the number of argumnets
+ * @argc: the number of argumnets
  *
  * Return: 0 if no error
  */
-int main(char *argv, int argvc)
+int main(char argc, int *argv[])
 {
 	printf("%s\n", (char *)argv[0]);
 	return (0);
