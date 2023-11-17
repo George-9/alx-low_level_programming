@@ -21,8 +21,14 @@ int main(int argc, char *argv[])
 	{
 		for (i = 1; i < argc; i++)
 		{
-			if (atoi(argv[i]))
+			if (atoi(argv[i]) == 0)
+			{
+				continue;
+			}
+			else if (atoi(argv[i]))
+			{
 				t += atoi(argv[i]);
+			}
 			else
 			{
 				printf("%s\n", "Error");
