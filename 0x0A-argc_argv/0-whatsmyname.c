@@ -7,7 +7,7 @@
  *
  * Return: 0 if no error
  */
-int main(char argv*, int argvc)
+int main(char *argv, int argvc)
 {
 	printf("%s\n", *argv);
 	return (0);
