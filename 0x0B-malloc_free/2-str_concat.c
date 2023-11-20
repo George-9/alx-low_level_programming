@@ -1,5 +1,7 @@
 #include "main.h"
 
+int my_strlen(char *);
+
 /**
  * str_concat - concantenates two strings
  * @s1: the first string
@@ -10,35 +12,58 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *n;
-	size_t i, l;
+	unsigned int i, l, l1, l2;
 
 	if (s1 == NULL && s2 == NULL)
-		return (NULL);
+	{
+		n = malloc(2);
+		n[0] = '\0';
 
-	if (s1 != NULL && s2 == NULL)
-	{
-		n = malloc((sizeof(char) * strlen(s1)) + 1);
-		if (n == NULL)
-			return (NULL);
-		for (i = 0; i < strlen(s1); i++)
-			n[i] = s1[i];
-		return (n);
-	}
-	if (s1 == NULL && s2 != NULL)
-	{
-		n = malloc((sizeof(char) * strlen(s2)) + 1);
-		if (n == NULL)
-			return (NULL);
-		for (i = 0; i < strlen(s2); i++)
-			n[i] = s2[i];
 		return (n);
 	}
 
-	n = malloc((sizeof(char) * (strlen(s1) + strlen(s2))) + 1);
-	for (i = 0; i < strlen(s1); i++)
-		n[i] = s1[i];
-	for (l = 0; l < strlen(s2); l++, i++)
-		n[i] = s2[i];
+	l1 = my_strlen(s1);
+	l2 = my_strlen(s2);
 
-	return (n);
+	if (s1 == NULL)
+	{
+		n = malloc(l2 + 1);
+		for (l = 0; l < l2; l++)
+			n[l] = s2[l];
+
+		return (n);
+	}
+	if (s2 == NULL)
+	{
+		n = malloc(l1 + 1);
+
+		for (l = 0; l < l1; l++)
+			n[l] = s1[l];
+		return (n);
+	}
+	else
+	{
+		n = malloc(sizeof(char) * (l1 + l2  + 1));
+
+		for (l = 0; l < l1; l++)
+			n[l] = s1[l];
+
+		for (i = 0; l < (l1 + l2); l++, i++)
+			n[l] = s2[i];
+		return (n);
+	}
+	return (NULL);
+}
+
+/**
+ * my_strlen - gets the length of a string
+ * @s: the string
+ *
+ * Return: the length of s
+ */
+int my_strlen(char *s)
+{
+	if (s == NULL)
+		return (0);
+	return (strlen(s));
 }
