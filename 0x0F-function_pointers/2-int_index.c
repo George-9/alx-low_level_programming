@@ -11,6 +11,9 @@ int int_index(int *array, int size, int (*cmp)(int))
 {
 	int c;
 
+	if (size < 0)
+		return (-1);
+
 	c = 0;
 	for (; c < size; c++)
 	{
