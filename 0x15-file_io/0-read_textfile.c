@@ -9,10 +9,14 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	FILE *file = fopen(filename, "r");
+	FILE *file;
 	char c;
 	size_t count = 0;
 
+	if (filename == NULL)
+		return (0);
+
+       	file = fopen(filename, "r");
 	if (!file)
 		return (0);
 
